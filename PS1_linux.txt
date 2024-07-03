@@ -1,1 +1,11 @@
-export PS1="\[$(tput bold)\]\[$(tput setaf 2)\](\[$(tput setaf 4)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 2)\]\[$(tput setaf 4)\])\[$(tput setaf 2)\]-[\w]\[$(tput setaf 4)\]\n\\$ \[$(tput setaf 7)\]> \[$(tput sgr0)\]"
+# Variável PS1 para usuário comum.
+PS1="\[$(tput bold)\]\[$(tput setaf 10)\](\[$(tput setaf 4)\]\u\[\
+$(tput setaf 4)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 4)\]\[\
+$(tput setaf 10)\])\[$(tput setaf 10)\]-[\w]\[$(tput setaf 4)\]\n\\$ \[\
+$(tput setaf 11)\]> \[$(tput sgr0)\]"
+
+# Variável PS1 para o root.
+PS1="\[$(tput bold)\]\[$(tput setaf 2)\](\[$(tput setaf 1)\]\u\[\               
+$(tput setaf 1)\]@\[$(tput setaf 1)\]\h\[$(tput setaf 2)\]\[\                   
+$(tput setaf 2)\])\[$(tput setaf 10)\]-[\w]\[$(tput setaf 1)\]\n\\$ \[\         
+$(tput setaf 11)\]> \[$(tput sgr0)\]"
