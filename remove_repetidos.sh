@@ -8,7 +8,7 @@ DirScan="Caminho_Absoluto"
 # Arquivo de log, onde fica salvo os logs.
 ArqLog="/tmp/remove_repetidos.log"
 
-find $DirScan -type f > /tmp/arquivo_temp.txt
+find $DirScan -type f | sort > /tmp/arquivo_temp.txt
 
 ArquivoTexto=$(cat /tmp/arquivo_temp.txt)
 
